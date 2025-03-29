@@ -10,16 +10,16 @@ const Footer = () => {
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 space-x-4 mb-12">
           {/* Column 1 - Logo and About */}
-          <div className="space-y-4">
+          <div className="space-y-4 space-x-4">
             <Link href="/" className="flex items-center">
-              <div className="text-[#E9967A] mr-2">
+              <div className="text-[#E9967A] px-2">
                 <TbBrandGoogleHome size={38} className="stroke-1" />
               </div>
               <span className="text-gray-800 font-semibold text-xl">
                 Desire Div
               </span>
             </Link>
-            <p className="text-gray-600 mt-4 pr-4">
+            <p className="text-gray-600 mt-4 ">
               Desire Div is a dynamically well established web Designing and
               Development company With strong and talented team of experienced
               IT experts with excellent domain knowledge across various
@@ -144,7 +144,7 @@ const Footer = () => {
           </div>
 
           {/* Column 3 - Services */}
-          <div className="space-y-6 space-x-6">
+          <div className="space-y-6 ">
             <h3 className="text-xl font-semibold mb-6 text-gray-800">
               Quick Links
             </h3>

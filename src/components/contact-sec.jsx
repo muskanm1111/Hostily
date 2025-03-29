@@ -86,19 +86,19 @@ export default function Contactsec() {
   `;
 
   return (
-    <div className="container mx-auto px-4 py-16 ">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 overflow-hidden">
-        <div className="relative text-black p-12 flex flex-col justify-between">
+    <div className="container mx-auto px-4 py-8 md:py-16">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 md:gap-12 overflow-hidden">
+        <div className="relative text-black px-4 md:p-12 flex flex-col justify-between">
           <div>
-            <h2 className="text-4xl font-bold mb-6 text-black drop-shadow-md">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6 text-black drop-shadow-md">
               Get In Touch
             </h2>
-            <p className="text-black/80 mb-8 text-lg">
+            <p className="text-black/80 mb-6 md:mb-8 text-base md:text-lg">
               We&apos;re here to help and answer any question you might have. We
               look forward to hearing from you!
             </p>
 
-            <div className="space-y-6">
+            <div className="space-y-4 md:space-y-2">
               {[
                 { icon: <FaPhoneAlt />, text: "+123 ( 458 ) 896 895" },
                 { icon: <FaEnvelope />, text: "hello@desirediv.com" },
@@ -107,19 +107,19 @@ export default function Contactsec() {
                   text: "T-16, Pocket-5, Plot no-6, Malik Builcon, Commercial Plaza Dwarka Sector-12, New Delhi, 110075",
                 },
               ].map((item, index) => (
-                <div key={index} className="flex items-center space-x-2  p-4">
-                  <div className=" p-3 rounded-full">
+                <div key={index} className="flex items-start space-x-2 p-2 md:p-2">
+                  <div className="p-2 md:p-3 rounded-full">
                     {React.cloneElement(item.icon, {
-                      className: "text-[#E9967A] text-2xl",
+                      className: "text-[#E9967A] text-xl md:text-2xl",
                     })}
                   </div>
-                  <p className="text-black text-lg">{item.text}</p>
+                  <p className="text-black text-base md:text-lg">{item.text}</p>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="flex space-x-4 mt-8">
+          <div className="flex space-x-4 mt-6 md:mt-8">
             {[FaFacebook, FaInstagram, FaTwitter].map((Icon, index) => (
               <a
                 key={index}
@@ -132,8 +132,8 @@ export default function Contactsec() {
           </div>
         </div>
 
-        <div className="p-12">
-          <h2 className="text-4xl font-bold text-gray-800 mb-8">
+        <div className="px-4 py-8 md:p-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 md:mb-8">
             Send a Message
           </h2>
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -227,7 +227,7 @@ export default function Contactsec() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className={`hidden md:flex w-full bg-[#E9967A] h-[50px] items-center justify-center cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow hover:scale-105 hover:shadow before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-black before:to-black before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:hover:before:left-0 text-white hover:text-white text-base font-semibold ${
+              className={`flex md:flex w-full bg-[#E9967A] h-[50px] items-center justify-center cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow hover:scale-105 hover:shadow before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-black before:to-black before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:hover:before:left-0 text-white hover:text-white text-base font-semibold ${
                 isSubmitting ? "opacity-70 cursor-not-allowed" : ""
               }`}
             >
@@ -237,11 +237,10 @@ export default function Contactsec() {
           </form>
         </div>
       </div>
-      <div className="container mx-auto px-4 py-16 w-full flex items-center justify-center mt-12">
+      <div className="container mx-auto px-4 py-8 md:py-16 w-full flex items-center justify-center mt-8 md:mt-12">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.234350710511!2d77.04311527461583!3d28.592745575686518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1bd8f405bcf1%3A0x9e601372145832d0!2sDesire%20Div%20-%20Website%20Designing%20Company%20in%20Dwarka!5e0!3m2!1sen!2sin!4v1743151899794!5m2!1sen!2sin"
-          className="w-full rounded-lg shadow-lg items-center"
-          height="450"
+          className="w-full h-[300px] md:h-[450px] rounded-lg shadow-lg"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>

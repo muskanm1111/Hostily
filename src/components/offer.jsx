@@ -30,11 +30,11 @@ const Offer = () => {
         {/* Overlay Content */}
         <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-start z-10">
           <div className="text-start   mx-auto  max-w-7xl text-white  ">
-            <div className="flex flex-col items-center justify-center  ">
-              <span className="text-3xl capitalize md:text-6xl    font-semibold mb-4">
+            <div className="flex flex-col items-start md:items-center justify-center px-2  ">
+              <span className="text-3xl capitalize md:text-6xl     font-semibold mb-0 md:mb-4">
                 Book hotel rooms
               </span>
-              <span className="text-3xl capitalize md:text-6xl    font-semibold mb-4">
+              <span className="text-3xl capitalize md:text-6xl   font-semibold ">
                
                 get deals & book flights online.
               </span>
