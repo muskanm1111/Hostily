@@ -117,7 +117,7 @@ function NavItem({ href, label, simple = false, mobile = false, setShow, scrolle
          ${mobile ? "text-2xl" : ""}
        `}
     >
-   
+      {label}
     </Link>
   );
 }
