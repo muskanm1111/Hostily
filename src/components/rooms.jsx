@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 
-// Room data
+
 const rooms = [
   {
     id: 1,
@@ -41,13 +41,13 @@ const rooms = [
   },
 ];
 
-// Tab options
+
 const tabs = ["All Room", "Luxury", "Single", "Small Suite", "Family"];
 
 export default function Rooms() {
   const [activeTab, setActiveTab] = useState("All Room");
 
-  // Filter rooms based on active tab
+
   const filteredRooms = rooms.filter((room) =>
     room.categories.includes(activeTab)
   );
@@ -77,14 +77,14 @@ export default function Rooms() {
           </div>
         </div>
 
-        {/* Room Grid */}
+      
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {filteredRooms.slice(0, 3).map((room) => (
             <RoomCard key={room.id} room={room} />
           ))}
         </div>
 
-        {/* Second Row Grid */}
+  
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
           {filteredRooms.slice(3).map((room) => (
             <RoomCard key={room.id} room={room} />

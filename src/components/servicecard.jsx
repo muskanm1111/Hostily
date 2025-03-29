@@ -4,7 +4,7 @@ import { MdOutlineCellWifi, MdOutlineCleaningServices } from "react-icons/md";
 import { GrMapLocation } from "react-icons/gr";
 
 
-// Hotel Services Data
+
 const hotelServices = [
   {
     icon: <MdOutlineCleaningServices size={28} className="text-[#E9967A] " />,

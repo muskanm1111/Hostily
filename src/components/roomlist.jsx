@@ -13,7 +13,7 @@ export default function Roomlist() {
             <Link href={`/room/${room.id}`} key={room.id} className="block">
               <div className="bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
                 <div className="flex flex-col md:flex-row">
-                  {/* Image Section - Made larger and more prominent */}
+                  {/* Image  */}
                   <div className="md:w-2/5 h-[250px] md:h-[300px]">
                     <Image
                       src={room.image}
@@ -23,7 +23,6 @@ export default function Roomlist() {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  {/* Details Section - Better spacing and typography */}
                   <div className="flex-1 p-6">
                     <h2 className="text-2xl font-bold mb-3 text-gray-800">
                       {room.name}

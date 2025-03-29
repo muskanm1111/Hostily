@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { CalendarIcon, ChevronDown } from "lucide-react";
+
 
 export default function Banner() {
  return (

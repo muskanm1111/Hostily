@@ -50,7 +50,7 @@ export default function Header() {
           </span>
         </Link>
 
-        {/* Desktop Navigation */}
+        {/* Desktop  */}
         <nav className="hidden md:flex text-[1.20rem] items-center space-x-8">
           <NavItem href="/" label="Home" scrolled={scrolled} />
           <NavItem href="/about" label="About" scrolled={scrolled} />
@@ -58,7 +58,7 @@ export default function Header() {
           <NavItem href="/contact" label="Contact" simple scrolled={scrolled} />
         </nav>
 
-        {/* Mobile Navigation */}
+        {/* Mobile  */}
         {show && (
           <nav className="fixed md:hidden inset-0 bg-[#0e1317] z-40 flex flex-col items-start px-8  justify-start py-32 space-y-8 text-xl ">
             <NavItem href="/" label="Home" mobile={true} setShow={setShow} />
@@ -84,13 +84,13 @@ export default function Header() {
           </nav>
         )}
 
-        {/* Book Now Button */}
+        {/*  Btn */}
         <button className="hidden md:flex w-[180px] bg-[#E9967A] h-[50px]  items-center justify-center  cursor-pointer relative overflow-hidden transition-all duration-500 ease-in-out shadow hover:scale-105 hover:shadow before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-black before:to-black before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before: hover:before:left-0 text-white hover:text-white  text-base font-semibold ">
           BOOK NOW
           <ArrowRight className="ml-2 h-4 w-4" />
         </button>
 
-        {/* Mobile Menu Toggle Button */}
+        {/* Mobile Btn */}
         <button onClick={togglebtn} className="md:hidden text-black z-50">
           {show ? <X size={24} className="text-white" /> : <Menu size={24} />}
         </button>
@@ -117,24 +117,7 @@ function NavItem({ href, label, simple = false, mobile = false, setShow, scrolle
          ${mobile ? "text-2xl" : ""}
        `}
     >
-      {label}
-      {/* {!simple && !mobile && (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="ml-1"
-        >
-          <path d="M12 5v14" />
-          <path d="M19 12H5" />
-        </svg>
-      )} */}
+   
     </Link>
   );
 }

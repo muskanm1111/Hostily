@@ -88,11 +88,6 @@ export default function RoomDetail({ params }) {
             <div className="border p-6 sticky top-4">
               <h2 className="text-xl font-semibold mb-4">Book This Room</h2>
 
-              {/* <div className="text-2xl font-bold mb-6">
-              ${room.price}
-              <span className="text-sm font-normal text-gray-500">/Night</span>
-            </div> */}
-
               <div className="mb-4">
                 <label className="block text-gray-700 mb-2">Check In</label>
                 <div className="border p-3 flex justify-between items-center cursor-pointer">

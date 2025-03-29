@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 const Gallery = () => {
-  // Image sources (you'll want to replace these with your actual image paths)
+
   const images = [
     "/gallery-1 (1).jpg",
     "/gallery-2.jpg",
