@@ -31,8 +31,8 @@ const About = () => {
           </div>
 
           {/* Images */}
-          <div className="w-full lg:w-1/2 mt-20 relative">
-            <div className="grid grid-cols-1 gap-4">
+          <div className="w-full lg:w-1/2 mt-20 relative px-4 lg:px-0">
+            <div className="grid grid-cols-1 gap-4 max-w-2xl mx-auto lg:mx-0">
               <div className="relative h-64 md:h-80 lg:h-96 w-full">
                 <Image
                   src="/hotel-1.webp"
@@ -42,12 +42,12 @@ const About = () => {
                 />
               </div>
 
-              <div className="absolute -top-20 -right-20 w-2/3 h-48 md:h-64 hidden md:block">
+              <div className="absolute -top-16 -right-8 lg:-right-16 w-2/3 h-48 md:h-64 hidden md:block">
                 <Image
                   src="/hotel-2.webp"
                   alt="Hotel living area"
                   fill
-                  className="object-right-top "
+                  className="object-cover"
                 />
               </div>
             </div>
