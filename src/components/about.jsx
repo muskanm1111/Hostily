@@ -47,7 +47,7 @@ const About = () => {
                   src="/hotel-2.webp"
                   alt="Hotel living area"
                   fill
-                  className="object-right "
+                  className="object-right-top "
                 />
               </div>
             </div>
