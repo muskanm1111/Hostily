@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 const About = () => {
   return (
-    <section className="w-full py-16 md:py-28  bg-white">
+    <section className="w-full py-16 md:py-28 bg-white overflow-hidden">
       <div className="max-w-[80.50rem] mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-start gap-8 lg:gap-16">
           {/* Content  */}
@@ -31,9 +31,8 @@ const About = () => {
           </div>
 
           {/* Images */}
-          <div className="w-full lg:w-1/2  mt-20 relative">
+          <div className="w-full lg:w-1/2 mt-20 relative">
             <div className="grid grid-cols-1 gap-4">
-            
               <div className="relative h-64 md:h-80 lg:h-96 w-full">
                 <Image
                   src="/hotel-1.webp"
@@ -43,12 +42,12 @@ const About = () => {
                 />
               </div>
 
-              <div className="absolute -top-16 -right-20 w-2/3 h-48 md:h-64 hidden md:block">
+              <div className="absolute -top-20 -right-20 w-2/3 h-48 md:h-64 hidden md:block">
                 <Image
                   src="/hotel-2.webp"
                   alt="Hotel living area"
                   fill
-                  className="object-cover"
+                  className="object-right "
                 />
               </div>
             </div>
