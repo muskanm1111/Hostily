@@ -65,7 +65,7 @@ export default function Rooms() {
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`px-8 mb-4 py-4 text-sm font-medium transition-colors ${
+                className={`px-6 mb-4 py-4 text-sm font-medium transition-colors ${
                   activeTab === tab
                     ? "bg-[#E9967A] text-white"
                     : "bg-white text-gray-800 hover:bg-gray-100"
