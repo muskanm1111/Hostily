@@ -33,7 +33,7 @@ const HotelServices = () => {
         {hotelServices.map((service, index) => (
           <div
             key={index}
-            className="flex flex-row items-center text-start "
+            className="flex  flex-col md:flex-row items-center text-center md:text-start "
           >
             <div className="mb-4 bg-gray-100  rounded-full p-6">
               {service.icon}

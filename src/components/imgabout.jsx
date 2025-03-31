@@ -16,8 +16,8 @@ const RestaurantShowcase = ({
 }) => {
   return (
     <div className="">
-      <div className="w-full py-12  bg-gray-100">
-        <div className="max-w-[80.50rem] mx-auto px-4">
+      <div className="w-full py-12 md:py-20  bg-gray-100">
+        <div className="max-w-7xl mx-auto px-4">
           <div
             className={`flex flex-col  ${
               reversed ? "lg:flex-row-reverse" : "lg:flex-row"
@@ -39,10 +39,10 @@ const RestaurantShowcase = ({
             {/* Content  */}
             <div className="w-full lg:w-1/2 space-y-6">
               <div className="space-y-4">
-                <h2 className="text-4xl md:text-4xl lg:text-5xl font-semibold  text-gray-900">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold px-4 text-gray-900">
                   {title}
                 </h2>
-                <p className="text-gray-600 max-w-md">{description}</p>
+                <p className="text-gray-600 px-4 max-w-md">{description}</p>
               </div>
 
             

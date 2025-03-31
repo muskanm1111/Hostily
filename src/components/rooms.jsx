@@ -54,10 +54,10 @@ export default function Rooms() {
 
   return (
     <div className="bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 py-28">
+      <div className="max-w-7xl mx-auto px-4 py-16 md:py-28 pb-20 md:pb-[4rem]">
         {/* Tabs */}
-        <div className="flex flex-wrap  md:justify-between gap-2  mb-8">
-          <h1 className="text-4xl md:text-5xl font-semibold text-center md:text-left mb-8">
+        <div className="flex flex-wrap justify-center md:justify-between gap-2  mb-8">
+          <h1 className="text-4xl md:text-5xl font-semibold text-center  md:text-left mb-8">
             Our Luxury Rooms
           </h1>
           <div>
@@ -65,7 +65,7 @@ export default function Rooms() {
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`px-8 py-4 text-sm font-medium transition-colors ${
+                className={`px-8 mb-4 py-4 text-sm font-medium transition-colors ${
                   activeTab === tab
                     ? "bg-[#E9967A] text-white"
                     : "bg-white text-gray-800 hover:bg-gray-100"
@@ -78,14 +78,14 @@ export default function Rooms() {
         </div>
 
       
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {filteredRooms.slice(0, 3).map((room) => (
             <RoomCard key={room.id} room={room} />
           ))}
         </div>
 
   
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
           {filteredRooms.slice(3).map((room) => (
             <RoomCard key={room.id} room={room} />
           ))}
@@ -100,7 +100,7 @@ function RoomCard({ room }) {
     <div className="relative group overflow-hidden">
       <div className="relative h-80 w-full">
         <Image
-          src={room.image || "/placeholder.svg"}
+          src={room.image}
           alt={room.type}
           fill
           className="object-cover transition-transform duration-500 group-hover:scale-110"
