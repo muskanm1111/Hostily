@@ -92,7 +92,14 @@ export default function Header() {
 
         {/* Mobile Btn */}
         <button onClick={togglebtn} className="md:hidden text-black z-50">
-          {show ? <X size={24} className="text-white" /> : <Menu size={24} />}
+          {show ? (
+            <X size={24} className="text-white" />
+          ) : (
+            <Menu
+              size={24}
+              className={`${scrolled ? "text-black" : "text-white"}`}
+            />
+          )}
         </button>
       </div>
       <hr className={`${scrolled ? "border-gray-200" : "border-gray-600"}`} />
