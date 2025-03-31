@@ -5,7 +5,6 @@ import Image from "next/image";
 export default function Banner() {
  return (
    <main>
- 
      <div>
        <div className="relative   h-screen  bg-black">
          {/* Image */}
@@ -24,16 +23,14 @@ export default function Banner() {
          <div className="relative h-full flex flex-col justify-center items-center px-4 text-center md:text-left">
            <div className="container mx-auto">
              <div className="md:px-28 mt-20 md:mb-0">
-               <h1 className="text-white text-5xl md:text-7xl px-2 font-bold md:font-semibold max-w-4xl mb-4">
+               <h1 className="text-white text-[2.8rem] md:text-7xl px-2 font-bold md:font-semibold max-w-4xl mb-0 md:mb-4">
                  The Best Hotel
                </h1>
-               <h1 className="md:ml-20  text-white text-5xl md:text-7xl  font-bold md:font-semibold  mb-4">
+               <h1 className="md:ml-20  text-white text-[2.8rem] md:text-7xl  font-bold md:font-semibold  mb-4">
                  Deals in the World
                </h1>
              </div>
            </div>
-
-         
          </div>
        </div>
      </div>

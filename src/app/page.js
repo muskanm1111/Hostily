@@ -21,9 +21,8 @@ const page = () => {
       <main>
         {/* Example with reversed layout */}
         <RestaurantShowcase
-          imageSrc="/feature-2.webp"
+          imageSrc="/1.3.jpeg"
           imageAlt="Chef preparing gourmet meal"
-          
           title="24×7 Security"
           description="Your safety is our priority. With 24/7 security, myostel offers you a safe environment where you can focus on your studies and personal development with peace of mind."
           ctaText="MEET OUR TEAM"

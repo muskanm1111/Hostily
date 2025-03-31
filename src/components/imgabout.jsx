@@ -4,9 +4,9 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 const RestaurantShowcase = ({
-  imageSrc = "/feature-1.webp",
+  imageSrc = "/1.2.jpeg",
   imageAlt = "Restaurant interior",
- 
+
   title = "Centrally Air-Conditioned",
   description = "Experience ultimate comfort in our centrally air-conditioned hostel. Whether hot summer or cool winter, you will always find a perfect, cozy oasis to relax and feel good.",
 
@@ -15,8 +15,8 @@ const RestaurantShowcase = ({
   reversed = false,
 }) => {
   return (
-    <div className="">
-      <div className="w-full py-12 md:py-20  bg-gray-100">
+    <div >
+      <div className="w-full py-12  bg-gray-100 ">
         <div className="max-w-7xl mx-auto px-4">
           <div
             className={`flex flex-col  ${
@@ -37,15 +37,13 @@ const RestaurantShowcase = ({
             </div>
 
             {/* Content  */}
-            <div className="w-full lg:w-1/2 space-y-6">
+            <div className="w-full lg:w-1/2 space-y-6 ">
               <div className="space-y-4">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold px-4 text-gray-900">
                   {title}
                 </h2>
                 <p className="text-gray-600 px-4 max-w-md">{description}</p>
               </div>
-
-            
             </div>
           </div>
         </div>
