@@ -54,7 +54,7 @@ export default function Rooms() {
 
   return (
     <div className="bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 py-16 md:py-28 pb-20 md:pb-[4rem]">
+      <div className="max-w-7xl mx-auto px-4 py-20 md:py-28 pb-20 md:pb-[4rem]">
         {/* Tabs */}
         <div className="flex flex-wrap justify-center md:justify-between gap-2  mb-8">
           <h1 className="text-4xl md:text-5xl font-semibold text-center  md:text-left mb-8">
