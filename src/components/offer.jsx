@@ -2,8 +2,8 @@ import React from 'react';
 
 const Offer = () => {
   return (
-    <div className=" h-screen md:h-[500px] bg-black bg-fixed bg-[url(/2.jpeg)] bg-center">
-      <div className="relative inset-0 h-screen md:h-[500px] w-full">
+    <div className="h-[500px] bg-black bg-fixed bg-[url(/2.jpeg)] bg-center">
+      <div className="relative inset-0 h-[500px] w-full">
         {/* Overlay  */}
         <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-start z-10">
           <div className="text-center   mx-auto  max-w-7xl text-white  ">
